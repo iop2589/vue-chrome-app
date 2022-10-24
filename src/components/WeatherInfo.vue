@@ -7,7 +7,7 @@
             <p>{{ cityName }}</p>
             <p>{{ weather }} / {{ tempo }}</p>
         </div>
-        <div v-else>
+        <div class="weather font-color" v-else>
             Loading...
         </div>
     </div>

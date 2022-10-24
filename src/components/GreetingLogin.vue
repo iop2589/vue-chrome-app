@@ -7,7 +7,7 @@
             </form>
         </div>
         <div class="greeting" v-else>
-            <h1 id="greeting">Hello ! {{ userName }}</h1>
+            <h1 class="font-color" id="greeting">Hello ! {{ userName }}</h1>
         </div>
     </div>
 </template>
