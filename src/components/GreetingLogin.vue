@@ -22,10 +22,22 @@ export default {
             isLogin: false
         }
     },
+    mounted: function  () {
+        this.getUserName();
+    },
     methods: {
         onLoginSubmit: function () {
             localStorage.setItem(USERNAME_KEY, this.userName);
             this.isLogin = true;
+        },
+        getUserName: function () {
+            let savedUserName = localStorage.getItem(USERNAME_KEY);
+            if (savedUserName === null) {
+                this.isLogin = false;
+            } else {
+                this.isLogin = true;
+                this.userName = savedUserName;
+            }
         }
     }
 }
