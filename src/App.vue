@@ -1,5 +1,5 @@
 <template>
-  <div :style="img">
+  <div>
     <clock-time></clock-time>
     <greeting-login></greeting-login>
     <weather-info></weather-info>
