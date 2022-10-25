@@ -4,6 +4,7 @@
     <greeting-login></greeting-login>
     <weather-info></weather-info>
     <to-do></to-do>
+    <today-quote></today-quote>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import GreetingLogin from "./components/GreetingLogin.vue";
 import ClockTime from "./components/ClockTime.vue";
 import WeatherInfo from "./components/WeatherInfo.vue";
 import ToDo from "./components/ToDo.vue";
+import TodaysQuote from "./components/TodayQuotes.vue";
 export default {
   computed: {
       img: function(){
@@ -27,7 +29,8 @@ export default {
     "greeting-login": GreetingLogin,
     "clock-time": ClockTime,
     "weather-info": WeatherInfo,
-    "to-do": ToDo
+    "to-do": ToDo,
+    "today-quote": TodaysQuote
   },
   methods: {
     setBackgroundImage: function () {
